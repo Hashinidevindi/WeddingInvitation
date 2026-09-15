@@ -133,7 +133,7 @@ export default function App() {
             <div className="w-8 h-px bg-[#C59A5F]/40" />
           </div>
           <p className="font-serif italic text-xs text-stone-600">
-            Janani &amp; Denuwan • November 14, 2026 • Colombo
+            Tharushi &amp; Tharun • November 14, 2026 • Colombo
           </p>
         </footer>
 
