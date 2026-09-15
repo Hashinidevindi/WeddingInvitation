@@ -25,7 +25,7 @@ export const IntroScreen: React.FC<IntroScreenProps> = ({ onEnter, onSkip }) => 
           ශ්‍රී සුභ මංගලම්
         </h1>
         <p className="font-sinhala text-sm sm:text-base text-[#d4af82] mt-2 tracking-wide font-normal">
-          ජනනි &amp; දෙනුවන්
+          තරුෂි &amp; තරුන්
         </p>
       </div>
 
