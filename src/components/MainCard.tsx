@@ -41,14 +41,14 @@ export const MainCard: React.FC<MainCardProps> = ({ onOpenRsvp, onOpenTraditions
           {/* Couple Names in English & Sinhala */}
           <div className="space-y-1 mb-5">
             <h2 className="font-serif text-3xl sm:text-4xl text-[#2D2829] tracking-wide font-normal">
-              Janani
+              Tharushi
             </h2>
             <div className="font-serif italic text-xl text-[#8F662C] font-semibold">&amp;</div>
             <h2 className="font-serif text-3xl sm:text-4xl text-[#2D2829] tracking-wide font-normal">
-              Denuwan
+              Tharun
             </h2>
             <p className="font-sinhala text-lg sm:text-xl text-[#7A1C29] font-medium pt-2">
-              ජනනි &amp; දෙනුවන්
+              තරුෂි &amp; තරුන්
             </p>
           </div>
 
