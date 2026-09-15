@@ -12,21 +12,21 @@ const initialBlessings: Blessing[] = [
     sender: 'Amma & Thaththa (Silva Family)',
     relation: "Bride's Parents",
     message: 'May the Triple Gem bless our precious Janani & Denuwan with everlasting joy, harmony, and prosperity!',
-    date: 'November 2026',
+    date: 'August 2026',
   },
   {
     id: '2',
     sender: 'Perera Family Elders',
     relation: "Groom's Family",
     message: 'දෙදෙනාටම චිරං ජයතු! Wishing you both a marriage filled with unconditional love and radiant smiles.',
-    date: 'November 2026',
+    date: 'August 2026',
   },
   {
     id: '3',
     sender: 'Sahan & Tharushi',
     relation: 'University Friends',
     message: 'Still remember your first smiles in Peradeniya! So thrilled to celebrate your special Poruwa day in Colombo!',
-    date: 'November 2026',
+    date: 'August 2026',
   },
 ];
 
@@ -62,7 +62,7 @@ export const BlessingsWall: React.FC<BlessingsWallProps> = ({ onOpenRsvp }) => {
       "Poruwa Ceremony & Wedding Reception of Janani & Denuwan at Galle Face Hotel Colombo."
     );
     const location = encodeURIComponent('Galle Face Hotel, Colombo, Sri Lanka');
-    const googleCalUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=20261114T040000Z/20261114T100000Z&details=${details}&location=${location}`;
+    const googleCalUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=20260814T040000Z/20260814T100000Z&details=${details}&location=${location}`;
     window.open(googleCalUrl, '_blank');
   };
 

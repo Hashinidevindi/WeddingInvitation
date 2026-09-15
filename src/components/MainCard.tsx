@@ -41,14 +41,14 @@ export const MainCard: React.FC<MainCardProps> = ({ onOpenRsvp, onOpenTraditions
           {/* Couple Names in English & Sinhala */}
           <div className="space-y-1 mb-5">
             <h2 className="font-serif text-3xl sm:text-4xl text-[#2D2829] tracking-wide font-normal">
-              Tharushi
+              Janani
             </h2>
             <div className="font-serif italic text-xl text-[#8F662C] font-semibold">&amp;</div>
             <h2 className="font-serif text-3xl sm:text-4xl text-[#2D2829] tracking-wide font-normal">
-              Tharun
+              Denuwan
             </h2>
             <p className="font-sinhala text-lg sm:text-xl text-[#7A1C29] font-medium pt-2">
-              තරුෂි &amp; තරුන්
+              ජනනි &amp; දෙනුවන්
             </p>
           </div>
 
@@ -68,7 +68,7 @@ export const MainCard: React.FC<MainCardProps> = ({ onOpenRsvp, onOpenTraditions
           <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
             <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-[#FBECE7]/80 border border-[#D67D89]/30 text-[#7A1C29] shadow-xs">
               <Calendar className="w-3.5 h-3.5" />
-              <span className="text-xs font-serif tracking-widest uppercase font-semibold">14 . 11 . 2026</span>
+              <span className="text-xs font-serif tracking-widest uppercase font-semibold">14 . 08 . 2026</span>
             </div>
 
             <button

@@ -29,10 +29,10 @@ export const Itinerary: React.FC = () => {
             </div>
             <div>
               <h5 className="font-serif text-lg text-stone-900 font-semibold leading-tight">
-                Saturday, November 14
+                Saturday, August 14
               </h5>
               <p className="font-sinhala text-xs text-stone-600">
-                2026 නොවැම්බර් 14 සෙනසුරාදා
+                2026 අගෝස්තු 14 සෙනසුරාදා
               </p>
               <span className="text-[10px] tracking-wider text-[#8F662C] font-semibold uppercase">
                 YEAR 2026
