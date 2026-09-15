@@ -13,7 +13,7 @@ function getResolvedTargetTime(inputDateStr: string): { targetMs: number; isRoll
 
   if (isNaN(target)) {
     // Fallback default
-    target = new Date('2027-08-14T09:30:00+05:30').getTime();
+    target = new Date('2026-11-14T09:30:00+05:30').getTime();
   }
 
   let isRolledForward = false;
@@ -50,7 +50,7 @@ function computeTimeLeft(targetMs: number) {
 }
 
 export const Countdown: React.FC<CountdownProps> = ({
-  targetDate = '2027-08-14T09:30:00+05:30',
+  targetDate = '2026-11-14T09:30:00+05:30',
   onDateChange,
 }) => {
   const [activeDate, setActiveDate] = useState(targetDate);
@@ -81,7 +81,7 @@ export const Countdown: React.FC<CountdownProps> = ({
   const setPreset = (presetType: 'upcoming' | 'seven_days' | 'custom') => {
     const now = new Date();
     if (presetType === 'upcoming') {
-      const nextDate = '2027-08-14T09:30:00+05:30';
+      const nextDate = '2026-11-14T09:30:00+05:30';
       setActiveDate(nextDate);
       if (onDateChange) onDateChange(nextDate);
       setShowDatePicker(false);
@@ -150,7 +150,7 @@ export const Countdown: React.FC<CountdownProps> = ({
                 onClick={() => setPreset('upcoming')}
                 className="px-3 py-1.5 rounded-xl bg-[#FAF4EB] border border-[#C59A5F]/30 text-[#7A1C29] font-medium text-[11px] hover:bg-amber-50 cursor-pointer"
               >
-                Saturday, August 14 (Auspicious Poruwa)
+                Saturday, November 14 (Auspicious Poruwa)
               </button>
               <button
                 type="button"
