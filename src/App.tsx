@@ -19,6 +19,7 @@ export default function App() {
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
   const [rsvpOpen, setRsvpOpen] = useState(false);
   const [traditionsOpen, setTraditionsOpen] = useState(false);
+  const [weddingDate, setWeddingDate] = useState('2027-08-14T09:30:00+05:30');
   const [viewMode, setViewMode] = useState<'mobile' | 'responsive'>('mobile');
 
   // Listen to audio state
@@ -108,7 +109,7 @@ export default function App() {
         />
 
         {/* Live Countdown Section */}
-        <Countdown targetDate="2026-08-14T09:30:00+05:30" />
+        <Countdown targetDate={weddingDate} onDateChange={setWeddingDate} />
 
         {/* Happy Couple Profiles (Nilame Groom & Osariya Bride) */}
         <CoupleProfiles />
