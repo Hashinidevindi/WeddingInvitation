@@ -19,7 +19,7 @@ export default function App() {
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
   const [rsvpOpen, setRsvpOpen] = useState(false);
   const [traditionsOpen, setTraditionsOpen] = useState(false);
-  const [weddingDate, setWeddingDate] = useState('2027-08-14T09:30:00+05:30');
+  const [weddingDate, setWeddingDate] = useState('2026-11-14T09:30:00+05:30');
   const [viewMode, setViewMode] = useState<'mobile' | 'responsive'>('mobile');
 
   // Listen to audio state
@@ -133,7 +133,7 @@ export default function App() {
             <div className="w-8 h-px bg-[#C59A5F]/40" />
           </div>
           <p className="font-serif italic text-xs text-stone-600">
-            Janani &amp; Denuwan • August 14, 2026 • Colombo
+            Janani &amp; Denuwan • November 14, 2026 • Colombo
           </p>
         </footer>
 
