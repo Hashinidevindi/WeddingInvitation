@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-display: "Cinzel Decorative", "Cormorant Garamond", serif;
+  --font-sinhala: "Noto Serif Sinhala", "Cormorant Garamond", serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+
+  --color-brand-cream: #FAF4EB;
+  --color-brand-blush: #FBECE7;
+  --color-brand-rose: #D67D89;
+  --color-brand-gold: #C59A5F;
+  --color-brand-goldDark: #8F662C;
+  --color-brand-burgundy: #7A1C29;
+  --color-brand-charcoal: #2D2829;
+  --color-brand-sand: #F3E7D7;
+}
+
+/* Subtle petal drift animation */
+@keyframes floatPetal {
+  0% { transform: translateY(-10px) rotate(0deg) scale(0.9); opacity: 0; }
+  20% { opacity: 0.8; }
+  80% { opacity: 0.8; }
+  100% { transform: translateY(100vh) rotate(360deg) scale(1.1); opacity: 0; }
+}
+
+.petal-layer {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.petal {
+  position: absolute;
+  background: radial-gradient(circle at 30% 30%, #ffd0dc, #ea7a98 80%);
+  border-radius: 60% 0 60% 40%;
+  opacity: 0.6;
+  filter: drop-shadow(0 2px 4px rgba(220, 100, 130, 0.2));
+  animation: floatPetal 12s linear infinite;
+}
+
+/* Traditional Sri Lankan Arch & Ornamentation */
+.arch-card {
+  border-radius: 120px 120px 24px 24px;
+  position: relative;
+}
+
+.traditional-border {
+  border: 1px solid rgba(197, 154, 95, 0.45);
+  outline: 4px double rgba(197, 154, 95, 0.3);
+  outline-offset: -8px;
+}
+
+.poruwa-card-shadow {
+  box-shadow: 0 16px 38px -12px rgba(168, 118, 54, 0.18), 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.countdown-arch {
+  border-radius: 40px 40px 16px 16px;
+  border: 1px solid rgba(205, 168, 115, 0.55);
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFF8EE 100%);
+  box-shadow: 0 6px 16px rgba(184, 134, 75, 0.12);
+}
+
+/* Background dots pattern */
+.bg-dots-pattern {
+  background-image: radial-gradient(rgba(222, 184, 135, 0.22) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
