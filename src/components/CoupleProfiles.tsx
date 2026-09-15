@@ -17,10 +17,10 @@ export const CoupleProfiles: React.FC = () => {
             THE GROOM | මනාලයා
           </span>
           <h4 className="font-serif text-3xl text-stone-800 font-normal mt-1">
-            Denuwan
+            Tharun
           </h4>
           <p className="font-sinhala text-base text-[#7A1C29] font-medium">
-            දෙනුවන්
+            තරුන්
           </p>
           <div className="mt-2 text-xs text-stone-600 font-serif italic">
             Son of Mr. &amp; Mrs. Perera
@@ -71,10 +71,10 @@ export const CoupleProfiles: React.FC = () => {
             THE BRIDE | මනාලිය
           </span>
           <h4 className="font-serif text-3xl text-stone-800 font-normal mt-1">
-            Janani
+            Tharushi
           </h4>
           <p className="font-sinhala text-base text-[#7A1C29] font-medium">
-            ජනනි
+            තරුෂි
           </p>
           <div className="mt-2 text-xs text-stone-600 font-serif italic">
             Daughter of Mr. &amp; Mrs. Silva
