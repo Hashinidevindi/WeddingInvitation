@@ -3,6 +3,7 @@ import { Sparkles, Heart } from 'lucide-react';
 
 export const CoupleProfiles: React.FC = () => {
   const [showStory, setShowStory] = useState(false);
+  const [showFullPhoto, setShowFullPhoto] = useState(false);
 
   return (
     <section className="px-5 mb-10" data-purpose="happy-couple-section">
@@ -30,40 +31,48 @@ export const CoupleProfiles: React.FC = () => {
           </div>
         </div>
 
-        {/* Illustrated Couple Graphic (Traditional Kandyan Avatar Art) */}
+        {/* Wedding Couple Portrait */}
         <div className="my-6 relative flex justify-center">
-          <div className="w-36 h-36 rounded-full bg-gradient-to-tr from-amber-100 via-rose-50 to-pink-100 p-1 border-2 border-[#C59A5F]/50 shadow-inner flex items-center justify-center overflow-hidden">
-            {/* Stylized SVG Couple representing Traditional Kandyan Bride & Groom */}
-            <svg className="w-28 h-28 text-stone-700" fill="none" viewBox="0 0 100 100">
-              {/* Groom (Nilame) */}
-              <circle cx="36" cy="45" fill="#E8C39E" r="14" />
-              {/* Nilame Traditional Hat (Thoppiya) */}
-              <polygon fill="#80182A" points="22,36 50,36 44,22 28,22" />
-              <circle cx="36" cy="20" fill="#D4AF37" r="3" />
-              <path d="M22,36 Q36,32 50,36" stroke="#D4AF37" strokeWidth="2" />
-              {/* Nilame Jacket & Chain */}
-              <path d="M20,60 Q36,54 48,60 L50,95 L18,95 Z" fill="#6B1D2A" />
-              <circle cx="36" cy="70" fill="#D4AF37" r="4" />
+          <div className="relative group cursor-pointer" onClick={() => setShowFullPhoto(!showFullPhoto)}>
+            {/* Outer golden halo */}
+            <div className="absolute -inset-1.5 rounded-full bg-gradient-to-tr from-[#C59A5F] via-[#D67D89] to-[#C59A5F] opacity-70 blur-xs group-hover:opacity-100 transition-opacity" />
 
-              {/* Bride (Kandyan Osariya) */}
-              <circle cx="64" cy="47" fill="#F0CDB0" r="13" />
-              {/* Bride Hair bun & Nalalpatiya Headband */}
-              <ellipse cx="64" cy="40" fill="#262223" rx="14" ry="8" />
-              <path d="M52,43 Q64,38 76,43" stroke="#D4AF37" strokeWidth="2" />
-              <circle cx="64" cy="38" fill="#D4AF37" r="2" />
-              {/* Bride Dress Cream & Gold */}
-              <path d="M50,60 Q64,56 78,60 L80,95 L48,95 Z" fill="#FAF6EE" />
-              {/* Necklaces & Agasthi Mala */}
-              <path d="M56,60 Q64,68 72,60" fill="none" stroke="#D4AF37" strokeWidth="1.5" />
-              <path d="M54,64 Q64,74 74,64" fill="none" stroke="#D4AF37" strokeWidth="1.5" />
-            </svg>
-          </div>
+            <div className="relative w-40 h-40 sm:w-44 sm:h-44 rounded-full p-1 bg-gradient-to-tr from-amber-100 via-rose-50 to-pink-100 border-2 border-[#C59A5F]/70 shadow-lg flex items-center justify-center overflow-hidden">
+              <img
+                src="/assets/wedding_couple.jpg"
+                alt="Janani & Denuwan - Auspicious Sri Lankan Wedding"
+                className="w-full h-full object-cover object-[center_20%] transition-transform duration-700 group-hover:scale-105"
+                referrerPolicy="no-referrer"
+              />
+            </div>
 
-          {/* Sparkle icon */}
-          <div className="absolute right-1/4 top-1 text-[#C59A5F] text-sm animate-pulse">
-            ✦
+            {/* Sparkle badge */}
+            <div className="absolute -top-1 -right-1 w-7 h-7 rounded-full bg-white/95 shadow-sm border border-[#C59A5F]/40 flex items-center justify-center text-[#8F662C] text-xs">
+              ✦
+            </div>
+
+            <span className="text-[10px] text-stone-400 font-sans block mt-2 text-center hover:text-[#7A1C29] transition-colors">
+              {showFullPhoto ? 'Tap to close photo' : 'Tap to view full portrait'}
+            </span>
           </div>
         </div>
+
+        {/* Full Portrait Lightbox / Expanded View */}
+        {showFullPhoto && (
+          <div className="mb-6 p-3 rounded-2xl bg-[#FFFDF9] border border-[#C59A5F]/35 shadow-md animate-fadeIn">
+            <div className="relative rounded-xl overflow-hidden max-h-[420px] flex items-center justify-center bg-stone-100">
+              <img
+                src="/assets/wedding_couple.jpg"
+                alt="Janani & Denuwan - Full Wedding Portrait"
+                className="w-full h-auto object-cover rounded-lg"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+            <p className="font-serif italic text-xs text-stone-600 mt-2 text-center">
+              "Two hearts uniting under the auspicious golden sunset of Sri Lanka"
+            </p>
+          </div>
+        )}
 
         {/* Bride Profile Card */}
         <div className="pt-2">
