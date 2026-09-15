@@ -16,8 +16,8 @@ export const StickyBottomBar: React.FC<StickyBottomBarProps> = ({
     if (navigator.share) {
       try {
         await navigator.share({
-          title: "Janani & Denuwan's Wedding Invitation",
-          text: 'You are joyfully invited to the auspicious Poruwa wedding of Janani & Denuwan!',
+          title: "Tharushi & Sadun's Wedding Invitation",
+          text: 'You are joyfully invited to the auspicious Poruwa wedding of Tharushi & Sadun!',
           url: window.location.href,
         });
       } catch {

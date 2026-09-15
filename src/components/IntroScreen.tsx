@@ -25,77 +25,203 @@ export const IntroScreen: React.FC<IntroScreenProps> = ({ onEnter, onSkip }) => 
           ශ්‍රී සුභ මංගලම්
         </h1>
         <p className="font-sinhala text-sm sm:text-base text-[#d4af82] mt-2 tracking-wide font-normal">
-          ජනනි &amp; දෙනුවන්
+          තරුෂි &amp; සදුන්
         </p>
       </div>
 
       {/* Center Iconic Lotus Blossom Graphic & Enter Button */}
       <div className="relative z-10 my-auto flex flex-col items-center">
-        {/* Glowing Lotus Sacred Illustration */}
+        {/* Two Intertwined Golden Wedding Rings Illustration */}
         <div className="relative mb-8">
-          <div className="absolute inset-0 blur-3xl bg-[#ea7a98]/30 rounded-full scale-150 animate-pulse pointer-events-none" />
+          <div className="absolute inset-0 blur-3xl bg-[#d4af37]/25 rounded-full scale-150 animate-pulse pointer-events-none" />
           <svg
-            className="w-40 h-40 sm:w-44 sm:h-44 relative drop-shadow-[0_12px_28px_rgba(235,110,140,0.5)] transition-transform duration-500 hover:scale-105"
-            fill="none"
+            className="w-44 h-44 sm:w-48 sm:h-48 relative drop-shadow-[0_12px_32px_rgba(212,175,55,0.45)] transition-transform duration-500 hover:scale-105"
             viewBox="0 0 200 200"
+            fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            aria-label="Sacred Lotus Blossom"
+            aria-label="Two Intertwined Wedding Rings"
           >
-            {/* Center petals */}
-            <path
-              d="M100 24C100 24 88 64 88 88C88 112 100 125 100 125C100 125 112 112 112 88C112 64 100 24 100 24Z"
-              fill="url(#lotus-grad-center)"
-            />
-            {/* Inner Left */}
-            <path
-              d="M100 125C100 125 72 115 54 92C36 69 47 42 47 42C47 42 66 69 82 86C98 103 100 125 100 125Z"
-              fill="url(#lotus-grad-left)"
-            />
-            {/* Inner Right */}
-            <path
-              d="M100 125C100 125 128 115 146 92C164 69 153 42 153 42C153 42 134 69 118 86C102 103 100 125 100 125Z"
-              fill="url(#lotus-grad-right)"
-            />
-            {/* Outer Left */}
-            <path
-              d="M100 128C100 128 65 130 38 114C11 98 15 76 15 76C15 76 34 99 58 109C82 119 100 128 100 128Z"
-              fill="url(#lotus-grad-outer-l)"
-              opacity="0.92"
-            />
-            {/* Outer Right */}
-            <path
-              d="M100 128C100 128 135 130 162 114C189 98 185 76 185 76C185 76 166 99 142 109C118 119 100 128 100 128Z"
-              fill="url(#lotus-grad-outer-r)"
-              opacity="0.92"
-            />
-            {/* Lotus Base */}
-            <ellipse cx="100" cy="132" fill="#7a3617" opacity="0.65" rx="44" ry="7" />
-
             <defs>
-              <linearGradient id="lotus-grad-center" x1="100" y1="24" x2="100" y2="125" gradientUnits="userSpaceOnUse">
-                <stop stopColor="#FFF5F7" />
-                <stop offset="0.5" stopColor="#F7819E" />
-                <stop offset="1" stopColor="#A8193D" />
+              {/* Rich Warm Gold Gradients */}
+              <linearGradient id="ring-gold-1" x1="40" y1="70" x2="115" y2="150" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stopColor="#FFF2B2" />
+                <stop offset="25%" stopColor="#F5D061" />
+                <stop offset="50%" stopColor="#D4AF37" />
+                <stop offset="75%" stopColor="#AA7C11" />
+                <stop offset="100%" stopColor="#F9E295" />
               </linearGradient>
-              <linearGradient id="lotus-grad-left" x1="47" y1="42" x2="100" y2="125" gradientUnits="userSpaceOnUse">
-                <stop stopColor="#FFD4DE" />
-                <stop offset="0.65" stopColor="#E85D83" />
-                <stop offset="1" stopColor="#8C1332" />
+
+              <linearGradient id="ring-gold-2" x1="85" y1="55" x2="165" y2="145" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stopColor="#FFFFFF" />
+                <stop offset="20%" stopColor="#FCE38A" />
+                <stop offset="50%" stopColor="#E5B842" />
+                <stop offset="75%" stopColor="#996D0F" />
+                <stop offset="100%" stopColor="#F5D26C" />
               </linearGradient>
-              <linearGradient id="lotus-grad-right" x1="153" y1="42" x2="100" y2="125" gradientUnits="userSpaceOnUse">
-                <stop stopColor="#FFD4DE" />
-                <stop offset="0.65" stopColor="#E85D83" />
-                <stop offset="1" stopColor="#8C1332" />
+
+              {/* Inner metallic depth gradient */}
+              <linearGradient id="ring-inner-shadow" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="#684705" stopOpacity="0.8" />
+                <stop offset="100%" stopColor="#FFECA8" stopOpacity="0.3" />
               </linearGradient>
-              <linearGradient id="lotus-grad-outer-l" x1="15" y1="76" x2="100" y2="128" gradientUnits="userSpaceOnUse">
-                <stop stopColor="#FFBED0" />
-                <stop offset="1" stopColor="#BA254E" />
-              </linearGradient>
-              <linearGradient id="lotus-grad-outer-r" x1="185" y1="76" x2="100" y2="128" gradientUnits="userSpaceOnUse">
-                <stop stopColor="#FFBED0" />
-                <stop offset="1" stopColor="#BA254E" />
+
+              {/* Diamond Facet Shimmer */}
+              <linearGradient id="diamond-glow" x1="126" y1="42" x2="142" y2="60" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stopColor="#FFFFFF" />
+                <stop offset="45%" stopColor="#E0F2FE" />
+                <stop offset="70%" stopColor="#BAE6FD" />
+                <stop offset="100%" stopColor="#7DD3FC" />
               </linearGradient>
             </defs>
+
+            {/* Ambient ring drop shadow on floor */}
+            <ellipse cx="102" cy="158" rx="56" ry="9" fill="#000000" opacity="0.35" filter="blur(4px)" />
+
+            {/* --- Ring 1: Groom's Classic Gold Band (Left) --- */}
+            {/* Outer ring path with thickness */}
+            <circle
+              cx="76"
+              cy="110"
+              r="37"
+              stroke="url(#ring-gold-1)"
+              strokeWidth="11"
+              className="drop-shadow-sm"
+            />
+            {/* Inner rim highlight */}
+            <circle
+              cx="76"
+              cy="110"
+              r="31.5"
+              stroke="#FFF7D1"
+              strokeWidth="1.2"
+              opacity="0.8"
+            />
+            {/* Outer rim gold contour */}
+            <circle
+              cx="76"
+              cy="110"
+              r="42.5"
+              stroke="#7A560B"
+              strokeWidth="1"
+              opacity="0.6"
+            />
+            {/* Specular sheen curve */}
+            <path
+              d="M 45 92 A 37 37 0 0 1 78 73"
+              stroke="#FFFFFF"
+              strokeWidth="3"
+              strokeLinecap="round"
+              opacity="0.85"
+            />
+
+            {/* --- Ring 2: Bride's Engagement / Diamond Ring (Right) --- */}
+            {/* Main band passing through Ring 1 */}
+            <circle
+              cx="124"
+              cy="102"
+              r="35"
+              stroke="url(#ring-gold-2)"
+              strokeWidth="10"
+            />
+            {/* Inner rim highlight */}
+            <circle
+              cx="124"
+              cy="102"
+              r="30"
+              stroke="#FFFFFF"
+              strokeWidth="1.2"
+              opacity="0.75"
+            />
+            {/* Outer rim gold contour */}
+            <circle
+              cx="124"
+              cy="102"
+              r="40"
+              stroke="#7A560B"
+              strokeWidth="1"
+              opacity="0.5"
+            />
+
+            {/* --- Interlocking Illusion Overlap --- */}
+            {/* Lower-right front arc of Ring 1 overlaps in front of Ring 2 */}
+            <path
+              d="M 96 130 A 37 37 0 0 0 113 110"
+              stroke="url(#ring-gold-1)"
+              strokeWidth="11"
+              strokeLinecap="round"
+            />
+            <path
+              d="M 96 130 A 37 37 0 0 0 113 110"
+              stroke="#FFF7D1"
+              strokeWidth="1.5"
+              fill="none"
+              opacity="0.9"
+            />
+
+            {/* Specular sheen curve on Ring 2 */}
+            <path
+              d="M 148 80 A 35 35 0 0 1 159 104"
+              stroke="#FFFFFF"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              opacity="0.8"
+            />
+
+            {/* --- Solitaire Diamond on Bride's Ring --- */}
+            {/* Gold Diamond Mount / Crown */}
+            <path
+              d="M 128 67 L 134 57 L 144 57 L 150 67 Z"
+              fill="url(#ring-gold-2)"
+              stroke="#7A560B"
+              strokeWidth="1"
+            />
+            {/* 4-Prong setting */}
+            <rect x="132" y="55" width="2" height="6" fill="#FFF2B2" rx="1" />
+            <rect x="144" y="55" width="2" height="6" fill="#FFF2B2" rx="1" />
+
+            {/* Brilliant Cut Diamond Gemstone */}
+            <g transform="translate(138, 51)">
+              {/* Diamond Table & Crown */}
+              <polygon
+                points="-10,0 -5,-7 5,-7 10,0 0,11"
+                fill="url(#diamond-glow)"
+                stroke="#FFFFFF"
+                strokeWidth="1"
+              />
+              {/* Facet lines */}
+              <line x1="-5" y1="-7" x2="-2" y2="0" stroke="#FFFFFF" strokeWidth="0.8" opacity="0.9" />
+              <line x1="5" y1="-7" x2="2" y2="0" stroke="#FFFFFF" strokeWidth="0.8" opacity="0.9" />
+              <line x1="-10" y1="0" x2="10" y2="0" stroke="#FFFFFF" strokeWidth="0.8" opacity="0.9" />
+              <line x1="-2" y1="0" x2="0" y2="11" stroke="#BAE6FD" strokeWidth="0.8" opacity="0.9" />
+              <line x1="2" y1="0" x2="0" y2="11" stroke="#BAE6FD" strokeWidth="0.8" opacity="0.9" />
+
+              {/* Diamond Sparkle / Flare Starburst */}
+              <path
+                d="M 0,-14 Q 0,-7 -7,-7 Q 0,-7 0,0 Q 0,-7 7,-7 Q 0,-7 0,-14 Z"
+                fill="#FFFFFF"
+                className="animate-pulse"
+              />
+              <circle cx="0" cy="-7" r="1.5" fill="#FFFFFF" />
+            </g>
+
+            {/* Romantic Sparkles around the rings */}
+            <g className="text-[#FFE58F]">
+              {/* Sparkle 1 */}
+              <path
+                d="M 46,68 Q 46,73 41,73 Q 46,73 46,78 Q 46,73 51,73 Q 46,73 46,68 Z"
+                fill="#FFF4B8"
+                opacity="0.9"
+              />
+              {/* Sparkle 2 */}
+              <path
+                d="M 166,134 Q 166,138 162,138 Q 166,138 166,142 Q 166,138 170,138 Q 166,138 166,134 Z"
+                fill="#FFF4B8"
+                opacity="0.85"
+              />
+              {/* Sparkle 3 (small) */}
+              <circle cx="102" cy="74" r="1.5" fill="#FFFFFF" opacity="0.8" />
+              <circle cx="62" cy="148" r="1.2" fill="#FFE58F" opacity="0.7" />
+            </g>
           </svg>
         </div>
 

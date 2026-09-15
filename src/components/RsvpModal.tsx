@@ -41,13 +41,13 @@ export const RsvpModal: React.FC<RsvpModalProps> = ({ isOpen, onClose, onSubmitR
     const icsContent = [
       'BEGIN:VCALENDAR',
       'VERSION:2.0',
-      'PRODID:-//Janani and Denuwan//Wedding Invitation//EN',
+      'PRODID:-//Tharushi and Sadun//Wedding Invitation//EN',
       'BEGIN:VEVENT',
-      'SUMMARY:Wedding Poruwa Ceremony - Janani & Denuwan',
-      'DESCRIPTION:Traditional Sri Lankan Poruwa ceremony & wedding reception of Janani and Denuwan at Galle Face Hotel Colombo.',
+      'SUMMARY:Wedding Poruwa Ceremony - Tharushi & Sadun',
+      'DESCRIPTION:Traditional Sri Lankan Poruwa ceremony & wedding reception of Tharushi and Sadun at Galle Face Hotel Colombo.',
       'LOCATION:Galle Face Hotel, Colombo, Sri Lanka',
-      'DTSTART:20260814T040000Z',
-      'DTEND:20260814T100000Z',
+      'DTSTART:20261114T040000Z',
+      'DTEND:20261114T100000Z',
       'STATUS:CONFIRMED',
       'END:VEVENT',
       'END:VCALENDAR',
@@ -57,7 +57,7 @@ export const RsvpModal: React.FC<RsvpModalProps> = ({ isOpen, onClose, onSubmitR
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.setAttribute('download', 'Janani-Denuwan-Wedding.ics');
+    link.setAttribute('download', 'Tharushi-Sadun-Wedding.ics');
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -87,7 +87,7 @@ export const RsvpModal: React.FC<RsvpModalProps> = ({ isOpen, onClose, onSubmitR
               ඔබගේ ආදරණීය ප්‍රතිචාරයට අපගේ හදපිරි ස්තූතිය!
             </p>
             <p className="text-xs text-stone-600 leading-relaxed max-w-xs mx-auto">
-              Thank you for confirming your presence. Your blessings mean the world to Janani &amp; Denuwan as they unite in sacred marriage.
+              Thank you for confirming your presence. Your blessings mean the world to Tharushi &amp; Sadun as they unite in sacred marriage.
             </p>
 
             <div className="pt-4 flex flex-col gap-2">
